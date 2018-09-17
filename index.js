@@ -7,6 +7,7 @@ $('footer>div').on('click',function(){
 var value = null
 $('#search .button').on('click',function(){
     value =$('#search input').val()
+    $('.search-restult').empty()
     startSearch()
 })
 
@@ -151,12 +152,15 @@ function setDataUs(data){
     })
  }
 
+
  function startSearch(){
      $.ajax({
          url:'https://api.douban.com/v2/movie/search',
          type:'GET',
          data:{
              q:value,
+             start:0,
+             count:20
          },
          dataType:'jsonp'
      }).done(function(ret){
