@@ -59,10 +59,10 @@ function setData(data){
            </div>
            <div class="detail">
                <h2>霸王别姬</h2>
-               <div class="extra"><span class="score">9.3分</span> / 1000收藏</div>
-               <div class="extra">1994 / 剧情、爱情</div>
-               <div class="extra">导演: 张艺谋</div>
-               <div class="extra">主演: 张国荣、张丰毅、巩俐</div>
+               <div class="extra"><span class="score">9.3分</span> / <span class="collect">1000收藏</span></div>
+               <div class="extra"><span class="year">1994</span> / <span class="genres">剧情、爱情</span></div>
+               <div class="extra">导演: <span class="direction">张艺谋</span></div>
+               <div class="extra">主演: <span class="cast">张国荣、张丰毅、巩俐</span></div>
            </div>
        </a>
    </div>
@@ -88,13 +88,13 @@ function setData(data){
             })
             return castArr.join('、')
         })
+        console.log($node)
         $('#top250').append($node)
    })
 }
 
 startUs()
 function startUs(){
-    $('.loading').show()
     $.ajax({
         url:'https://api.douban.com/v2/movie/us_box',
         type:'GET',
@@ -105,7 +105,6 @@ function startUs(){
     }).fail(function(){
         console.log('error')
     }).always(function(){
-        $('.loading').hide()
     })
 }
 
@@ -119,10 +118,10 @@ function setDataUs(data){
             </div>
             <div class="detail">
                 <h2>霸王别姬</h2>
-                <div class="extra"><span class="score">9.3分</span> / 1000收藏</div>
-                <div class="extra">1994 / 剧情、爱情</div>
-                <div class="extra">导演: 张艺谋</div>
-                <div class="extra">主演: 张国荣、张丰毅、巩俐</div>
+                <div class="extra"><span class="score">9.3分</span> / <span class="collect">1000收藏</span></div>
+                <div class="extra"><span class="year">1994</span> / <span class="genres">剧情、爱情</span></div>
+                <div class="extra">导演: <span class="direction">张艺谋</span></div>
+                <div class="extra">主演: <span class="cast">张国荣、张丰毅、巩俐</span></div>
             </div>
         </a>
     </div>
@@ -181,10 +180,10 @@ function setDataSearch(data){
             </div>
             <div class="detail">
                 <h2>霸王别姬</h2>
-                <div class="extra"><span class="score">9.3分</span> / 1000收藏</div>
-                <div class="extra">1994 / 剧情、爱情</div>
-                <div class="extra">导演: 张艺谋</div>
-                <div class="extra">主演: 张国荣、张丰毅、巩俐</div>
+                <div class="extra"><span class="score">9.3分</span> / <span class="collect">1000收藏</span></div>
+                <div class="extra"><span class="year">1994</span> / <span class="genres">剧情、爱情</span></div>
+                <div class="extra">导演: <span class="direction">张艺谋</span></div>
+                <div class="extra">主演: <span class="cast">张国荣、张丰毅、巩俐</span></div>
             </div>
         </a>
     </div>
