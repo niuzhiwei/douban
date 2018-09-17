@@ -59,7 +59,7 @@ function setData(data){
            </div>
            <div class="detail">
                <h2>霸王别姬</h2>
-               <div class="extra"><span class="score">9.3分</span> / <span class="collect">1000收藏</span></div>
+               <div class="extra"><span class="score">9.3分</span> / <span class="collect">1000</span>收藏</div>
                <div class="extra"><span class="year">1994</span> / <span class="genres">剧情、爱情</span></div>
                <div class="extra">导演: <span class="direction">张艺谋</span></div>
                <div class="extra">主演: <span class="cast">张国荣、张丰毅、巩俐</span></div>
@@ -118,7 +118,7 @@ function setDataUs(data){
             </div>
             <div class="detail">
                 <h2>霸王别姬</h2>
-                <div class="extra"><span class="score">9.3分</span> / <span class="collect">1000收藏</span></div>
+                <div class="extra"><span class="score">9.3分</span> / <span class="collect">1000</span>收藏</div>
                 <div class="extra"><span class="year">1994</span> / <span class="genres">剧情、爱情</span></div>
                 <div class="extra">导演: <span class="direction">张艺谋</span></div>
                 <div class="extra">主演: <span class="cast">张国荣、张丰毅、巩俐</span></div>
@@ -180,7 +180,7 @@ function setDataSearch(data){
             </div>
             <div class="detail">
                 <h2>霸王别姬</h2>
-                <div class="extra"><span class="score">9.3分</span> / <span class="collect">1000收藏</span></div>
+                <div class="extra"><span class="score">9.3分</span> / <span class="collect">1000</span>收藏</div>
                 <div class="extra"><span class="year">1994</span> / <span class="genres">剧情、爱情</span></div>
                 <div class="extra">导演: <span class="direction">张艺谋</span></div>
                 <div class="extra">主演: <span class="cast">张国荣、张丰毅、巩俐</span></div>
