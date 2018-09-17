@@ -19,7 +19,7 @@ function start(){
     isLoading = true
     $('.loading').show()
     $.ajax({
-        url:'http://api.douban.com/v2/movie/top250',
+        url:'https://api.douban.com/v2/movie/top250',
         type:'GET',
         data:{
             start:index,
@@ -95,7 +95,7 @@ startUs()
 function startUs(){
     $('.loading').show()
     $.ajax({
-        url:'http://api.douban.com/v2/movie/us_box',
+        url:'https://api.douban.com/v2/movie/us_box',
         type:'GET',
         dataType:'jsonp'
     }).done(function(ret){
@@ -153,7 +153,7 @@ function setDataUs(data){
 
  function startSearch(){
      $.ajax({
-         url:'http://api.douban.com/v2/movie/search',
+         url:'https://api.douban.com/v2/movie/search',
          type:'GET',
          data:{
              q:value,
